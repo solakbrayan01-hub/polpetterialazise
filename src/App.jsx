@@ -1,9 +1,9 @@
 import { useState, useEffect, Suspense } from 'react'
-import Polpette3D from './components/Polpette3D'
 import StepIcon from './components/StepIcon'
 import CustomCursor from './components/CustomCursor'
 import ErrorBoundary from './components/ErrorBoundary'
 import IngredienteIllustration from './components/IngredienteIllustration'
+import HeroIllustration from './components/HeroIllustration'
 import OpenStatus from './components/OpenStatus'
 import Cartoline from './components/Cartoline'
 import Carrello from './components/Carrello'
@@ -115,7 +115,7 @@ export default function App() {
           <a href="#ingredienti">Ingredienti</a>
           <a href="#contatti">Contatti</a>
         </div>
-        <a href="tel:+390451234567" className="nav-cta">
+        <a href="tel:+393711141745" className="nav-cta">
           ☎ Ordina
         </a>
       </nav>
@@ -146,7 +146,7 @@ export default function App() {
           </div>
 
           <div className="hero-cta fade-up visible delay-3">
-            <a href="tel:+390451234567" className="btn-primary">
+            <a href="tel:+393711141745" className="btn-primary">
               <span>☎ Ordina al telefono</span>
             </a>
             <button className="btn-secondary" onClick={() => document.getElementById('menu').scrollIntoView()}>
@@ -157,9 +157,7 @@ export default function App() {
 
         <div className="hero-3d">
           <ErrorBoundary>
-            <Suspense fallback={null}>
-              <Polpette3D />
-            </Suspense>
+            <HeroIllustration />
           </ErrorBoundary>
           <div className="hero-3d-label">
             servite così,<br />su stuzzicadenti
@@ -511,7 +509,7 @@ export default function App() {
               </div>
               <div className="contatti-info-block">
                 <strong>Per ordini ed info</strong>
-                <a href="tel:+390451234567">+39 045 123 4567</a><br />
+                <a href="tel:+393711141745">+39 371 114 1745</a><br />
                 <a href="mailto:ciao@polpetteriadilazise.it">ciao@polpetteriadilazise.it</a>
               </div>
             </div>
@@ -528,12 +526,12 @@ export default function App() {
               ordina, passa a ritirare. Niente attesa.
             </p>
 
-            <a href="tel:+390451234567" className="telefono">
+            <a href="tel:+393711141745" className="telefono">
               <svg viewBox="0 0 24 24">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
               </svg>
               <div>
-                <span>045 123 4567</span>
+                <span>371 114 1745</span>
                 <small>chiamaci ora</small>
               </div>
             </a>

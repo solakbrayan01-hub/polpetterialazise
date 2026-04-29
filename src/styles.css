@@ -2959,3 +2959,99 @@ body::before {
 @media (min-width: 769px) {
   .call-fab { display: none; }
 }
+
+/* ============================================
+   HERO ILLUSTRATION — piattino con polpette
+   ============================================ */
+.hero-illustration {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-illustration svg {
+  width: 100%;
+  height: 100%;
+  max-width: 580px;
+  max-height: 580px;
+  display: block;
+  filter: drop-shadow(0 20px 40px rgba(43, 31, 21, 0.18));
+}
+
+/* Respiro lieve del piattino intero */
+.piatto-anim {
+  transform-origin: 300px 300px;
+  animation: piattoBreath 6s ease-in-out infinite;
+}
+
+@keyframes piattoBreath {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.012) rotate(0.3deg); }
+}
+
+/* Polpette: lievissimo wobble individuale */
+.polpetta {
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.polpetta-1 {
+  animation: polpettaFloat1 5s ease-in-out infinite;
+}
+.polpetta-2 {
+  animation: polpettaFloat2 6s ease-in-out infinite;
+}
+.polpetta-3 {
+  animation: polpettaFloat3 7s ease-in-out infinite;
+}
+
+@keyframes polpettaFloat1 {
+  0%, 100% { transform: translate(225px, 235px) rotate(0deg); }
+  50% { transform: translate(225px, 232px) rotate(-1deg); }
+}
+@keyframes polpettaFloat2 {
+  0%, 100% { transform: translate(380px, 250px) rotate(0deg); }
+  50% { transform: translate(380px, 247px) rotate(1deg); }
+}
+@keyframes polpettaFloat3 {
+  0%, 100% { transform: translate(295px, 360px) rotate(0deg); }
+  50% { transform: translate(295px, 357px) rotate(-0.8deg); }
+}
+
+/* Foglie basilico: ondeggio */
+.basilico {
+  transform-origin: 330px 305px;
+  transform-box: fill-box;
+  animation: basilicoSway 4s ease-in-out infinite;
+}
+.basilico-piccolo {
+  transform-origin: 258px 195px;
+  transform-box: fill-box;
+  animation: basilicoSway 5s ease-in-out infinite reverse;
+}
+
+@keyframes basilicoSway {
+  0%, 100% { transform: translate(330px, 305px) rotate(0deg); }
+  25% { transform: translate(330px, 305px) rotate(3deg); }
+  75% { transform: translate(330px, 305px) rotate(-3deg); }
+}
+
+/* Briciole: leggero pulse */
+.briciole {
+  animation: briciolePulse 4s ease-in-out infinite;
+}
+
+@keyframes briciolePulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+/* Reduced motion — niente animazioni */
+@media (prefers-reduced-motion: reduce) {
+  .piatto-anim, .polpetta, .basilico, .basilico-piccolo, .briciole {
+    animation: none !important;
+  }
+}
