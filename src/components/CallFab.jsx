@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-const TELEFONO = '+390451234567'
+const TELEFONO = '+393711141745'
 
 export default function CallFab({ hidden }) {
   const [scrolled, setScrolled] = useState(false)

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const TELEFONO = '+390451234567'
+const TELEFONO = '+393711141745'
 // WhatsApp vuole il numero senza + e senza spazi
 const WHATSAPP_NUMERO = TELEFONO.replace(/[^\d]/g, '')
 
