@@ -31,14 +31,6 @@ const RECENSIONI = [
     rotation: 1.8,
     stamp: "lago",
   },
-  {
-    testo: "Tipo di posto che ti fa innamorare di Lazise. Mia figlia di 6 anni ne ha mangiate 4 di fila. Mio marito 6. Io ne ho prese altre 8 da portare a casa.",
-    autore: "Federica P.",
-    luogo: "Padova",
-    data: "Agosto 2025",
-    rotation: -3.2,
-    stamp: "polpetta",
-  },
 ]
 
 const STAMPS = {
